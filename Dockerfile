@@ -1,4 +1,4 @@
-FROM anapsix/alpine-java:jdk8
+FROM anapsix/alpine-java:latest
 
 ADD start.sh /bin/start.sh
 ADD torrc /etc/torrc
