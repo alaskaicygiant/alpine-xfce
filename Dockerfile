@@ -12,7 +12,7 @@ EXPOSE 9050 53
 ADD ./start.sh /bin/start.sh
 ADD ./torrc /etc/torrc
 
-RUN apk add ibus-dev
+RUN apk add --update ibus-dev
 ADD liu.db /usr/share/ibus-table/tables/liu.db
 ADD liu.png /usr/share/ibus-table/icons/liu.png
 
