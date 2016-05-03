@@ -1,6 +1,6 @@
 FROM anapsix/alpine-java:jdk8
 
-RUN apk update && apk add alpine-desktop ibus xfce4 
+RUN apk update && apk add alpine-desktop xfce4 
 
 RUN echo "http://nl.alpinelinux.org/alpine/v3.3/main" >> /etc/apk/repositories \
 && echo "@testing http://nl.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories \
