@@ -1,7 +1,7 @@
 FROM anapsix/alpine-java:jdk8
 
 RUN apk update && apk add alpine-desktop xfce4 
-RUN apk ibus
+RUN apk add ibus
 ADD liu.db /usr/share/ibus-table/tables/liu.db
 ADD liu.png /usr/share/ibus-table/icons/liu.png
 
