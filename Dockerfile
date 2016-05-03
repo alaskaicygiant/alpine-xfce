@@ -5,7 +5,7 @@ RUN apk update && apk add alpine-desktop xfce4
 RUN echo "http://nl.alpinelinux.org/alpine/v3.3/main" >> /etc/apk/repositories \
 && echo "@testing http://nl.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories \
 && apk update \
-&& apk add tor@testing \
+&& apk add tor@testing ibus@testing \
 && rm /var/cache/apk/*
 
 EXPOSE 9050 53
